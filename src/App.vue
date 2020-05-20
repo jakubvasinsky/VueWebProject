@@ -14,21 +14,41 @@
     </div>
 
     <div id="box1">
-      <h3>Supervisor</h3>Monitors activity to identify project roadblocks
+      <div id="colored-text">
+        <h3>Supervisor</h3>
+      </div>Monitors activity to identify project roadblocks
+      <div id="img1">
+        <img src="assets/icon-supervisor.svg">
+      </div>
     </div>
 
     <div id="box2">
-      <h3>Team Builder</h3>Scans our talent network to
+      <div id="colored-text">
+        <h3>Team Builder</h3>
+      </div>Scans our talent network to
       create the optimal team for your project
+      <div id="img2">
+        <img src="assets/icon-team-builder.svg">
+      </div>
     </div>
 
     <div id="box3">
-      <h3>Karma</h3>Regularly evaluates our talent to ensure quality
+      <div id="colored-text">
+        <h3>Karma</h3>
+      </div>Regularly evaluates our talent to ensure quality
+      <div id="img3">
+        <img src="assets/icon-karma.svg">
+      </div>
     </div>
 
     <div id="box4">
-      <h3>Calculator</h3>Uses data from past projects
+      <div id="colored-text">
+        <h3>Calculator</h3>
+      </div>data from past projects
       to provide better delivery estimates
+      <div id="img4">
+        <img src="assets/icon-calculator.svg">
+      </div>
     </div>
   </div>
 </template>
@@ -52,11 +72,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 30px;
+  background-color: whitesmoke;
 }
 #header {
   font-size: 150%;
+  margin-top: 30px;
 }
 #text3 {
   font-size: 80%;
@@ -64,9 +84,47 @@ export default {
   color: gray;
 }
 #box1 {
-  border: 5px, color black;
+  background-color: white;
+  border-top-style: solid;
+  border-color: hsl(180, 62%, 55%);
+  background-origin: border-box;
+  box-shadow: 5px;
   width: 350px;
   height: 200px;
   color: gray;
+  margin-top: 50px;
+}
+#colored-text {
+  color: rgb(0, 0, 0);
+}
+#box2 {
+  background-color: white;
+  border-top-style: solid;
+  border-color: hsl(0, 78%, 62%);
+
+  width: 350px;
+  height: 200px;
+  color: gray;
+  margin-top: 50px;
+}
+#box3 {
+  background-color: white;
+  border-top-style: solid;
+  border-color: hsl(34, 97%, 64%);
+
+  width: 350px;
+  height: 200px;
+  color: gray;
+  margin-top: 50px;
+}
+#box4 {
+  background-color: white;
+  border-top-style: solid;
+  border-color: hsl(212, 86%, 64%);
+
+  width: 350px;
+  height: 200px;
+  color: gray;
+  margin-top: 50px;
 }
 </style>
