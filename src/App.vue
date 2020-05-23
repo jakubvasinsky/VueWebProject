@@ -128,8 +128,8 @@ export default {
   height: 200px;
   color: gray;
   position: absolute;
-  top: 342px;
-  right: 207px;
+  top: 400px;
+  left: 842px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #box4 {
@@ -144,5 +144,42 @@ export default {
   left: 525px;
   top: 475px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 375px) {
+  #app {
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 0 auto;
+    width: auto;
+  }
+  #box1 {
+    width: auto;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  #box2 {
+    width: auto;
+    margin-left: 0px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    position: inherit;
+  }
+  #box3 {
+    width: auto;
+    margin-left: 0px;
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+    position: inherit;
+  }
+  #box4 {
+    width: auto;
+    margin-left: 0px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    position: inherit;
+  }
 }
 </style>
