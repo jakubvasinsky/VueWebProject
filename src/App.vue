@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <header id="header">
       {{text1}}
       <div id="bold-text">
@@ -44,7 +45,7 @@
     <div id="box4">
       <div id="colored-text">
         <h3>Calculator</h3>
-      </div>data from past projects
+      </div>Uses data from past projects
       to provide better delivery estimates
       <div id="img4">
         <img src="assets/icon-calculator.svg">
@@ -68,7 +69,9 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  height: 1000px;
+  width: 1340px;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -76,11 +79,14 @@ export default {
 }
 #header {
   font-size: 150%;
-  margin-top: 30px;
+  /* font-weight: 600;*/
+
+  padding: 30px;
 }
 #text3 {
-  font-size: 80%;
-  margin: 20px;
+  /* font-size: 80%;*/
+  font-weight: 200;
+  margin: 10px;
   color: gray;
 }
 #box1 {
@@ -89,10 +95,13 @@ export default {
   border-color: hsl(180, 62%, 55%);
   background-origin: border-box;
   box-shadow: 5px;
-  width: 350px;
+  width: 300px;
   height: 200px;
   color: gray;
-  margin-top: 50px;
+  margin-top: 200px;
+  margin-left: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #colored-text {
   color: rgb(0, 0, 0);
@@ -101,30 +110,39 @@ export default {
   background-color: white;
   border-top-style: solid;
   border-color: hsl(0, 78%, 62%);
-
-  width: 350px;
+  border-radius: 5px;
+  width: 300px;
   height: 200px;
   color: gray;
-  margin-top: 50px;
+  position: absolute;
+  top: 250px;
+  left: 525px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #box3 {
   background-color: white;
   border-top-style: solid;
   border-color: hsl(34, 97%, 64%);
-
-  width: 350px;
+  border-radius: 5px;
+  width: 300px;
   height: 200px;
   color: gray;
-  margin-top: 50px;
+  position: absolute;
+  top: 342px;
+  right: 207px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #box4 {
   background-color: white;
   border-top-style: solid;
   border-color: hsl(212, 86%, 64%);
-
-  width: 350px;
+  border-radius: 5px;
+  width: 300px;
   height: 200px;
   color: gray;
-  margin-top: 50px;
+  position: absolute;
+  left: 525px;
+  top: 475px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
